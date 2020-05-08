@@ -18,11 +18,12 @@ public class P05
 			}
 		}
 		
-		//ALTERNATIVE
+		/* Alternative Solution
 		int j=20000;
 		while(j%11!=0 || j%12!=0 || j%13!=0 || j%14!=0 || j%15!=0 || j%16!=0 || j%17!=0 || j%18!=0 || j%19!=0 || j%20!=0)
-	    j+=20; 
+	        j+=20; 
 		System.out.println(j);
+		*/
 	}
 
 	private static boolean isDivisible(int n) 
