@@ -13,7 +13,7 @@ public class P09 {
 	public static void main(String[] args) 
 	{
 		int c=0;
-		for(int i=1;i<1000;i++)
+		for(int i=200;i<1000;i++)
 			{
 			for(int j=i+1;j<1000;j++)
 			{
