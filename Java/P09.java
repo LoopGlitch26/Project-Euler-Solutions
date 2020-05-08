@@ -13,9 +13,9 @@ public class P09 {
 	public static void main(String[] args) 
 	{
 		double c;
-		for(int i=200;i<1000;i++)
+		for(int i=200;i<380;i++)
 			{
-			for(int j=i+1;j<1000;j++)
+			for(int j=i+1;j<380;j++)
 			{
 				c=Math.sqrt(Math.pow(i,2) + Math.pow(j,2));
 			if(i+j+c==1000)
