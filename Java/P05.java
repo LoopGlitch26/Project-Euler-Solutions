@@ -9,38 +9,25 @@ public class P05
 {
 	public static void main(String[] args) 
 	{
-		for(int i=20;i>=1;i+=20) 
+		long l=2520;
+		for(long i=11; i<=20; i++)
 		{
-			if(isDivisible(i)) 
-			{
-				System.out.println(i);
-				break;
-			}
+			l=lcm(l,i);
 		}
-		
-		/* Alternative Solution
+		System.out.println(l);
+		}
+	public static long gcd(long a, long b) 
+	{
+	    return b == 0 ? a : gcd(b, a % b); 
+	}
+	public static long lcm(long a, long b) 
+	{
+	    return (a * b) / gcd(a, b);
+	}
+}
+ 		/* Alternative Solution
 		int j=20000;
 		while(j%11!=0 || j%12!=0 || j%13!=0 || j%14!=0 || j%15!=0 || j%16!=0 || j%17!=0 || j%18!=0 || j%19!=0 || j%20!=0)
 	        j+=20; 
 		System.out.println(j);
 		*/
-	}
-
-	private static boolean isDivisible(int n) 
-	{
-		boolean flag=false;
-		int test=0;
-		for(int i=1;i<=20;i++) 
-		{
-			if(n%i==0) 
-			{
-				test++;
-			}
-		}
-		if(test==20)
-			{
-			flag=true;
-			}
-		return flag;
-	}
-}
