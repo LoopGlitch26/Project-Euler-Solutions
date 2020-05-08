@@ -13,6 +13,7 @@ public class P06
 {
 	public static void main(String[] args)
 	   {
+	       /* Previous Solution
 	       int s1=0,s2=0;
 	       for(int i = 1;i<=100;i++)
 	       {
@@ -20,6 +21,12 @@ public class P06
 	          s2+=(i*i);
 	        }
 	       int ans=(s1*s1)-s2;
-	       System.out.println(ans);
+	       System.out.println(ans); */
+		
+		//Updated Solution w/o for loop
+		int n=100, s1, s2;
+		s1=(n*(n+1)*(2*n+1))/6;
+		s2=(n*(n+1))/2;
+		System.out.println((s2*s2)-s1);
 	    }
 }
